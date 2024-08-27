@@ -13,7 +13,7 @@
   <script src="scripts/index.js" defer></script>
 </head>
 
-<body class="page__body body">
+<body class="page__body catalog-body">
 
   <header class="main-header">
     <nav class="main-header__navigation">
@@ -44,7 +44,7 @@
     </nav>
   </header>
 
-  <main class="body__main main-catalog">
+  <main class="catalog-body__main main-catalog">
     <h1 class="section-title">Каталог продукции</h1>
 
     <section class="main-catalog__catalog catalog">
@@ -58,7 +58,7 @@
             </picture>
           </a>
           <a class="catalog-list__text-link" href="#">
-            <h3 class="catalog-list__item-title">Cat Energy PRO<br> 500 г</h3>
+            <h3 class="item-title">Cat Energy PRO<br> 500 г</h3>
           </a>
           <dl class="catalog-list__inner-list inner-list">
             <dt class="inner-list__value-name">Масса</dt>
@@ -68,16 +68,18 @@
             <dt class="inner-list__value-name">Цена</dt>
             <dd class="inner-list__value">700 ₽</dd>
           </dl>
-          <a class="catalog-list__item-button second-button" href="#">Заказать</a>
+          <a class="catalog-list__item-button primary-button" href="#">Заказать</a>
         </li>
         <li class="catalog-list__item ">
-          <picture>
-            <source media="(min-width: 1280px)" width="172" height="196" type="image/png" srcset="images/chiken-1000-tabletop@1x.png 1x, images/chiken-1000-tabletop@2x.png 2x">
-            <source media="(min-width: 768px)" width="168" height="206" type="image/png" srcset="images/chiken-1000-tablet@1x.png 1x, images/chiken-1000-tablet@2x.png 2x">
-            <img class="catalog-list__item-image" width="84" height="100" src="images/chiken-1000-mobile@1x.png" srcset="images/chiken-1000-tablet@2x.png 2x" alt="Пластиковый стакан с едой">
-          </picture>
+          <a class="catalog-list__image-link" href="#">
+            <picture>
+              <source media="(min-width: 1280px)" width="172" height="196" type="image/png" srcset="images/chiken-1000-tabletop@1x.png 1x, images/chiken-1000-tabletop@2x.png 2x">
+              <source media="(min-width: 768px)" width="168" height="206" type="image/png" srcset="images/chiken-1000-tablet@1x.png 1x, images/chiken-1000-tablet@2x.png 2x">
+              <img class="catalog-list__item-image" width="84" height="100" src="images/chiken-1000-mobile@1x.png" srcset="images/chiken-1000-tablet@2x.png 2x" alt="Пластиковый стакан с едой">
+            </picture>
+          </a>
           <a class="catalog-list__text-link" href="#">
-            <h3 class="catalog-list__item-title">Cat Energy PRO<br> 1000 г</h3>
+            <h3 class="item-title">Cat Energy PRO<br> 1000 г</h3>
           </a>
           <dl class="catalog-list__inner-list inner-list">
             <dt class="inner-list__value-name">Масса</dt>
@@ -87,7 +89,7 @@
             <dt class="inner-list__value-name">Цена</dt>
             <dd class="inner-list__value">1000 ₽</dd>
           </dl>
-          <a class="catalog-list__item-button second-button" href="#">Заказать</a>
+          <a class="catalog-list__item-button primary-button" href="#">Заказать</a>
         </li>
         <li class="catalog-list__item ">
           <a class="catalog-list__image-link" href="#">
@@ -97,7 +99,7 @@
             </picture>
           </a>
           <a class="catalog-list__text-link" href="#">
-            <h3 class="catalog-list__item-title">Cat Energy PRO<br> 500 г</h3>
+            <h3 class="item-title">Cat Energy PRO<br> 500 г</h3>
           </a>
           <dl class="catalog-list__inner-list inner-list">
             <dt class="inner-list__value-name">Масса</dt>
@@ -107,7 +109,7 @@
             <dt class="inner-list__value-name">Цена</dt>
             <dd class="inner-list__value">700 ₽</dd>
           </dl>
-          <a class="catalog-list__item-button second-button" href="#">Заказать</a>
+          <a class="catalog-list__item-button primary-button" href="#">Заказать</a>
         </li>
         <li class="catalog-list__item ">
           <a class="catalog-list__image-link" href="#">
@@ -118,7 +120,7 @@
             </picture>
           </a>
           <a class="catalog-list__text-link" href="#">
-            <h3 class="catalog-list__item-title">Cat Energy PRO<br> 1000 г</h3>
+            <h3 class="item-title">Cat Energy PRO<br> 1000 г</h3>
           </a>
           <dl class="catalog-list__inner-list inner-list">
             <dt class="inner-list__value-name">Масса</dt>
@@ -128,7 +130,7 @@
             <dt class="inner-list__value-name">Цена</dt>
             <dd class="inner-list__value">1000 ₽</dd>
           </dl>
-          <a class="catalog-list__item-button second-button" href="#">Заказать</a>
+          <a class="catalog-list__item-button primary-button" href="#">Заказать</a>
         </li>
         <li class="catalog-list__item ">
           <a class="catalog-list__image-link" href="#">
@@ -138,7 +140,7 @@
             </picture>
           </a>
           <a class="catalog-list__text-link" href="#">
-            <h3 class="catalog-list__item-title">Cat Energy PRO<br> 500 г</h3>
+            <h3 class="item-title">Cat Energy PRO<br> 500 г</h3>
           </a>
           <dl class="catalog-list__inner-list inner-list">
             <dt class="inner-list__value-name">Масса</dt>
@@ -148,16 +150,18 @@
             <dt class="inner-list__value-name">Цена</dt>
             <dd class="inner-list__value">400 ₽</dd>
           </dl>
-          <a class="catalog-list__item-button second-button" href="#">Заказать</a>
+          <a class="catalog-list__item-button primary-button" href="#">Заказать</a>
         </li>
         <li class="catalog-list__item ">
-          <picture>
-            <source media="(min-width: 1280px)" width="172" height="196" type="image/png" srcset="images/buckwheat-1000-tabletop@1x.png 1x, images/buckwheat-1000-tabletop@2x.png 2x">
-            <source media="(min-width: 768px)" width="168" height="206" type="image/png" srcset="images/fbuckwheat-1000-tablet@1x.png 1x, images/buckwheat-1000-tablet@2x.png 2x">
-            <img class="catalog-list__item-image" width="84" height="100" src="images/buckwheat-1000-mobile@1x.png" srcset="images/buckwheat-1000-tablet@2x.png 2x" alt="Пластиковый стакан с едой">
-          </picture>
+          <a class="catalog-list__image-link" href="#">
+            <picture>
+              <source media="(min-width: 1280px)" width="172" height="196" type="image/png" srcset="images/buckwheat-1000-tabletop@1x.png 1x, images/buckwheat-1000-tabletop@2x.png 2x">
+              <source media="(min-width: 768px)" width="168" height="206" type="image/png" srcset="images/fbuckwheat-1000-tablet@1x.png 1x, images/buckwheat-1000-tablet@2x.png 2x">
+              <img class="catalog-list__item-image" width="84" height="100" src="images/buckwheat-1000-mobile@1x.png" srcset="images/buckwheat-1000-tablet@2x.png 2x" alt="Пластиковый стакан с едой">
+            </picture>
+          </a>
           <a class="catalog-list__text-link" href="#">
-            <h3 class="catalog-list__item-title">Cat Energy PRO<br> 1000 г</h3>
+            <h3 class="item-title">Cat Energy PRO<br> 1000 г</h3>
           </a>
           <dl class="catalog-list__inner-list inner-list">
             <dt class="inner-list__value-name">Масса</dt>
@@ -167,7 +171,7 @@
             <dt class="inner-list__value-name">Цена</dt>
             <dd class="inner-list__value">700 ₽</dd>
           </dl>
-          <a class="catalog-list__item-button second-button" href="#">Заказать</a>
+          <a class="catalog-list__item-button primary-button" href="#">Заказать</a>
         </li>
         <li class="catalog-list__item ">
           <a class="catalog-list__image-link" href="#">
@@ -177,7 +181,7 @@
             </picture>
           </a>
           <a class="catalog-list__text-link" href="#">
-            <h3 class="catalog-list__item-title">Cat Energy PRO<br> 500 г</h3>
+            <h3 class="item-title">Cat Energy PRO<br> 500 г</h3>
           </a>
           <dl class="catalog-list__inner-list inner-list">
             <dt class="inner-list__value-name">Масса</dt>
@@ -187,71 +191,73 @@
             <dt class="inner-list__value-name">Цена</dt>
             <dd class="inner-list__value">500 ₽</dd>
           </dl>
-          <a class="catalog-list__item-button second-button" href="#">Заказать</a>
+          <a class="catalog-list__item-button primary-button" href="#">Заказать</a>
         </li>
         <li class="catalog-list__item ">
           <a class="catalog-list__image-link" href="#">
             <span class="visually-hidden">Показать больше товаров.</span>
           </a>
-          <h3 class="catalog-list__item-title item-title">Показать еще<br> 100500 товаров</h3>
+          <h3 class="item-title">Показать еще<br> 100500 товаров</h3>
           <p class="item-empty">На самом деле вкусов<br> гораздо больше!</p>
-          <a class="catalog-list__item-button second-button second-button--empty-version" href="#">Показать все</a>
+          <a class="catalog-list__item-button primary-button primary-button--empty-version" href="#">Показать все</a>
         </li>
       </ul>
     </section>
 
     <section class="main-catalog__additional-products additional-products">
-      <h2 class="section-title">Дополнительные товары</h2>
+      <h2 class="catalog-section-title">Дополнительные товары</h2>
       <ul class="additional-products__list additional-products-list">
         <li class="additional-products__item">
-          <h3 class="additional-products__item-title">Сахарозаменитель</h3>
-          <p class="common-text">
-            <span class="common-text__value">1 упаковка (100 г)</span>
-            <span class="common-text__value">200 ₽</span>
-          </p>
-          <a class="additional-products__item-button second-button" href="#">Заказать</a>
+          <h3 class="additional-products__item-title item-title">Сахарозаменитель</h3>
+          <dl class="inner-list inner-list--additional-products">
+            <dt class="inner-list__value">1 упаковка (100 г)</dt>
+            <dd class="inner-list__value">200 ₽</dd>
+          </dl>
+          <a class="additional-products__item-button primary-button" href="#">Заказать</a>
         </li>
         <li class="additional-products__item">
-          <h3 class="additional-products__item-title">Питьевая вода</h3>
-          <p class="common-text">
-            <span class="common-text__value">5 литров</span>
-            <span class="common-text__value">50 ₽</span>
+          <h3 class="additional-products__item-title item-title">Питьевая вода</h3>
+          <p class="inner-list inner-list--additional-products">
+            <span class="inner-list__value">5 литров</span>
+            <span class="inner-list__value">50 ₽</span>
           </p>
-          <a class="additional-products__item-button second-button" href="#">Заказать</a>
+          <a class="additional-products__item-button primary-button" href="#">Заказать</a>
         </li>
         <li class="additional-products__item">
-          <h3 class="additional-products__item-title">Молоко</h3>
-          <p class="common-text">
-            <span class="common-text__value">1 литр</span>
-            <span class="common-text__value">100 ₽</span>
+          <h3 class="additional-products__item-title item-title">Молоко</h3>
+          <p class="inner-list inner-list--additional-products">
+            <span class="inner-list__value">1 литр</span>
+            <span class="inner-list__value">100 ₽</span>
           </p>
-          <a class="additional-products__item-button second-button" href="#">Заказать</a>
+          <a class="additional-products__item-button primary-button" href="#">Заказать</a>
         </li>
         <li class="additional-products__item">
-          <h3 class="additional-products__item-title">Витамины</h3>
-          <p class="common-text">
-            <span class="common-text__value">1 упаковка (30 г)</span>
-            <span class="common-text__value">300 ₽</span>
+          <h3 class="additional-products__item-title item-title">Витамины</h3>
+          <p class="inner-list inner-list--additional-products">
+            <span class="inner-list__value">1 упаковка (30 г)</span>
+            <span class="inner-list__value">300 ₽</span>
           </p>
-          <a class="additional-products__item-button second-button" href="#">Заказать</a>
+          <a class="additional-products__item-button primary-button" href="#">Заказать</a>
         </li>
       </ul>
-      <div class="additional-products__gift-wrapper">
-        <p class="additional-products__gift-text common-text common-text--opposite-color">Закажите все<br> и получите чехол для<br> кота в подарок!</p>
+      <div class="additional-products__gift-wrapper gift-wrapper">
+        <p class="additional-products__gift-text gift-text">Закажите все<br> и получите чехол для<br> кота в подарок!</p>
       </div>
     </section>
 
     <section class="main-catalog__subscription subscription">
-      <h2 class="section-title">Акции и новинки</h2>
+      <h2 class="catalog-section-title">Акции и новинки</h2>
       <form class="subscription__form" action="https://echo.htmlacademy.ru/" method="post" name="subscription-form">
         <label class="subscription__slogan" for="subscription-input">Подпишитесь на наши новости и не пропустите ни одного предложения!</label>
         <input class="subscription__input" type="email" placeholder="кuklachev@gmail.com" name="subscription-email" id="subscription-input">
-        <button class="subscription__button second-button" type="submit">Подписаться</button>
+        <button class="subscription__button primary-button" type="submit">Подписаться</button>
       </form>
     </section>
 
     <section class="map">
       <h2 class="visually-hidden">Карта проезда в магазин.</h2>
+      <p class="map__slogan">приглашаем<br> к сотрудничеству<br> дилеров!</p>
+      <p class="map__text">ул. Большая<br> Конюшенная, д. 19/8<br> Санкт-Петербург</p>
       <div class="map__canvas"></div>
     </section>
 

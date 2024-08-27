@@ -1,0 +1,4 @@
+.item-title {
+  @include text-format ($second-font, 16px, 125%, $second-text-color);
+  text-transform: uppercase;
+}

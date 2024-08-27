@@ -1,0 +1,8 @@
+.inner-list {
+  @include text-format ($primary-font, 12px, 133%, $primary-text-color);
+}
+
+.inner-list--additional-products {
+  font-size: 14px;
+  line-height: 100%;
+}

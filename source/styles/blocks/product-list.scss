@@ -1,0 +1,9 @@
+.product-list__title {
+  @include text-format ($second-font, 24px, 154%, $second-text-color);
+  text-transform: uppercase;
+}
+
+.product-list__link {
+  @include text-format ($second-font, 16px, 100%, $second-text-color);
+  text-transform: uppercase;
+}

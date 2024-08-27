@@ -1,0 +1,20 @@
+.subscription__slogan {
+  @include text-format ($second-font, 16px, 150%, $second-text-color);
+}
+
+.subscription__input {
+  width: 280px;
+  padding: 13px;
+  border: 1px solid #cdcdcd;
+  font-size: 20px;
+  line-height: 150%;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.subscription__input::placeholder {
+  font-size: 20px;
+  line-height: 150%;
+  text-transform: uppercase;
+  text-align: center;
+}

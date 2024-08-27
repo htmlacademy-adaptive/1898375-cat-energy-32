@@ -1,0 +1,13 @@
+.argument__parameter {
+  @include text-format ($second-font, 24px, 100%, $second-text-color);
+}
+
+.argument__parameter-description {
+  font-size: 12px;
+  line-height: 100%;
+}
+
+.argument__price {
+  @include text-format ($second-font, 14px, 143%, $second-text-color);
+  text-transform: uppercase;
+}

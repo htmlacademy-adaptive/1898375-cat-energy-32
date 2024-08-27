@@ -1,0 +1,14 @@
+.map {
+  background-color: $second-bg-color;
+}
+
+
+.map__slogan {
+  @include text-format ($second-font, 16px, 125%, $second-text-color);
+  text-transform: uppercase;
+}
+
+.map__text {
+  font-size: 14px;
+  line-height: 143%;
+}

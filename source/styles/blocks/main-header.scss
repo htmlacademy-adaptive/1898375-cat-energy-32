@@ -1,0 +1,4 @@
+.main-header__link {
+  @include text-format ($second-font, 20px, 100%, $second-text-color);
+  text-transform: uppercase;
+}

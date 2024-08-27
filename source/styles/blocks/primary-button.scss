@@ -1,0 +1,4 @@
+.primary-button {
+  @include text-format ($second-font, 16px, 130%, $third-text-color);
+  background-color: $third-bg-color;
+}
