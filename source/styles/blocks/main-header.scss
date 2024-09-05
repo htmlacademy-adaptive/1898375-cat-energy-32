@@ -1,3 +1,46 @@
+.main-header {
+  padding: 13px 20px 14px;
+}
+
+.main-header__navigation {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.main-header__logo {
+  display: flex;
+  align-items: center;
+  margin-right: 65px;
+}
+
+.main-header__logo-image {
+  display: inline-block;
+  margin-right: 56px;
+}
+
+.main-header__menu-button {
+  position: relative;
+  padding: 12px;
+  border: none;
+  cursor: pointer;
+  background-color: $primary-bg-color;
+
+  &::after {
+    @include absolute-center;
+    content: "";
+    width: 24px;
+    height: 16px;
+    mask-image: url("../../icons/stack.svg#menu-burger");
+    mask-size: contain;
+    background-color: $fourth-bg-color;
+  }
+}
+
+.main-header__list {
+  display: none;
+}
+
 .main-header__link {
   @include text-format ($second-font, 20px, 100%, $second-text-color);
   text-transform: uppercase;

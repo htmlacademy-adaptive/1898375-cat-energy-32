@@ -1,0 +1,16 @@
+.developer-link {
+  @include text-format ($primary-font, 16px, 125%, $primary-text-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  text-decoration: none;
+  color: $primary-text-color;
+
+
+  &::after {
+    @include common-pseudo (27px, 34px);
+    mask-image: url("../../icons/stack.svg#developer");
+    background-color: $five-bg-color;
+  }
+}

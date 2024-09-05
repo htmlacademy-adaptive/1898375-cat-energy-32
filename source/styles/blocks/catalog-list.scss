@@ -1,3 +1,21 @@
+.catalog-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.catalog-list__image-link--show-more {
+  display: block;
+  width: 30px;
+  height: 30px;
+}
+
+.catalog-list__image-link--show-more::before {
+  @include common-pseudo (30px, 30px);
+  mask-image: url("../../icons/stack.svg#plus");
+  background-color: #d3d3d3;
+}
+
 .catalog-list__image-link {
   display: inline-block;
   height: 100%;

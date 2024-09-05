@@ -1,0 +1,53 @@
+.case-section {
+  padding: 25px 20px 40px;
+}
+
+
+.case-section__toggle-button {
+  position: relative;
+  width: 4px;
+  height: 256px;
+  padding: 0;
+  border: none;
+  border-radius: 2px;
+  background-color: $five-bg-color;
+  z-index: 1;
+  cursor: pointer;
+
+  &:is(:hover, :focus-visible, :focus) {
+    background-color: $third-bg-color;
+  }
+
+  &:is(:active) {
+    opacity: 0.6;
+  }
+
+  &::before {
+    @include absolute-center;
+    content: " ";
+    width: 40px;
+    height: 40px;
+    border: 2px solid $five-bg-color;
+    border-radius: 50%;
+    background-color: $primary-bg-color;
+    z-index: 2;
+  }
+
+  &::after {
+    @include absolute-center;
+    content: " ";
+    width: 24px;
+    height: 18px;
+    mask-image: url("../../icons/stack.svg#double-trigon");
+    background-color: $five-bg-color;
+    z-index: 3;
+  }
+
+  &:is(:hover, :focus-visible, :focus)::before {
+    border-color: $third-bg-color;
+  }
+
+  &:is(:hover, :focus-visible, :focus)::after {
+    background-color: $third-bg-color;
+  }
+}

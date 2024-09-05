@@ -12,6 +12,10 @@ a {
   text-decoration: none;
 }
 
+picture {
+  display: contents;
+}
+
 *,
 *::before,
 *::after {

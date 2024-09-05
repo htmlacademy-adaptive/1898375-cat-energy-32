@@ -1,4 +1,4 @@
 .index-body {
-  @include text-format ($primary-font, 14px, 150%, $primary-text-color);
+  @include text-format ($primary-font, 14px, 129%, $primary-text-color);
   background-color: $primary-bg-color;
 }

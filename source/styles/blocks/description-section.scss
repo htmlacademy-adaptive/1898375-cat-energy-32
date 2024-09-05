@@ -1,0 +1,47 @@
+
+.description-section {
+  padding: 10px 20px 49px;
+}
+
+.description-section__title {
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+.description-section__list {
+  display: grid;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.description-section__item {
+  display: flex;
+  align-items: center;
+}
+
+.description-section__item--leaf-style::before {
+  @include common-pseudo (60px, 60px);
+  background-image: url("../../icons/stack.svg#leaf");
+}
+
+.description-section__item--powder-style::before {
+  @include common-pseudo (60px, 60px);
+  background-image: url("../../icons/stack.svg#powder");
+}
+
+.description-section__item--cutlery-style::before {
+  @include common-pseudo (60px, 60px);
+  background-image: url("../../icons/stack.svg#cutlery");
+}
+
+.description-section__item--clock-style::before {
+  @include common-pseudo (60px, 60px);
+  background-image: url("../../icons/stack.svg#clock");
+}
+
+.description-section__text {
+  margin: 0;
+  margin-left: 20px;
+}
