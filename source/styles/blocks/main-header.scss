@@ -1,5 +1,18 @@
 .main-header {
+  position: relative;
   padding: 13px 20px 14px;
+
+  @media (min-width: $tablet-width) {
+    padding: 25px 34px 25px 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 2%;
+    left: 58%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+  }
 }
 
 .main-header__navigation {
@@ -12,36 +25,30 @@
   display: flex;
   align-items: center;
   margin-right: 65px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 94px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 541px;
+  }
 }
 
 .main-header__logo-image {
   display: inline-block;
   margin-right: 56px;
-}
 
-.main-header__menu-button {
-  position: relative;
-  padding: 12px;
-  border: none;
-  cursor: pointer;
-  background-color: $primary-bg-color;
-
-  &::after {
-    @include absolute-center;
-    content: "";
-    width: 24px;
-    height: 16px;
-    mask-image: url("../../icons/stack.svg#menu-burger");
-    mask-size: contain;
-    background-color: $fourth-bg-color;
+  @media (min-width: $tablet-width) {
+    margin-right: 13px;
   }
 }
 
 .main-header__list {
   display: none;
-}
+  margin: 0;
 
-.main-header__link {
-  @include text-format ($second-font, 20px, 100%, $second-text-color);
-  text-transform: uppercase;
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
 }

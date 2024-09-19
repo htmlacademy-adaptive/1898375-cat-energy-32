@@ -1,3 +1,49 @@
 .catalog-section-title {
   @include text-format ($second-font, 24px, 100%, $second-text-color);
+  position: relative;
+  font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    font-size: 32px;
+    background-color: $primary-bg-color;
+  }
+
+  &::after {
+    @include common-pseudo (34px, 2px);
+    position: absolute;
+    top: 50%;
+    left: 101%;
+    transform: translate(-50%, -50%);
+    background-color: $third-bg-color;
+
+    @media (min-width: $tablet-width) {
+      width: 768px;
+      left: 93%;
+      z-index: -1;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 1440px;
+      left: 172%;
+    }
+  }
+}
+
+.catalog-section-title--long-line {
+  &::after {
+    width: 108px;
+    left: 87%;
+
+    @media (min-width: $tablet-width) {
+      width: 768px;
+      left: 125%;
+      z-index: -1;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 1440px;
+      left: 231%;
+      z-index: -1;
+    }
+  }
 }

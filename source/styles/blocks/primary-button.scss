@@ -1,4 +1,18 @@
 .primary-button {
   @include text-format ($second-font, 16px, 130%, $third-text-color);
+  padding: 10px;
   background-color: $third-bg-color;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.primary-button--subscription-style {
+  font-size: 20px;
+}
+
+.primary-button--empty-version {
+  color: $primary-text-color;
+  background-color: $second-bg-color;
 }

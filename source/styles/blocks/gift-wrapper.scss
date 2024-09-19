@@ -1,11 +1,26 @@
 .gift-wrapper {
+  padding: 59px 10px 43px;
   display: flex;
   justify-content: center;
-  background-color: $third-bg-color;
+  background:
+    linear-gradient(to bottom, rgba(104, 183, 56, 0.85) 100%, rgba(255, 255, 255) 0%),
+    url("../../images/gift-background-mobile@2x.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 60%;
+
+  @media (min-width: $tablet-width) {
+    padding: 65.5px 10px 43px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 56px 42px 43px;
+  }
 }
 
 .gift-wrapper__text {
   @include text-format ($primary-font, 16px, 125%, $third-text-color);
+  margin: 0;
   text-align: center;
 
   &::before {
@@ -13,5 +28,28 @@
     margin: 0 auto;
     margin-bottom: 61px;
     background-image: url("../../icons/stack.svg#gift");
+
+    @media (min-width: $tablet-width) {
+      margin: 0;
+      margin-right: 275px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-right: 0;
+      margin-bottom: 46px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
 }

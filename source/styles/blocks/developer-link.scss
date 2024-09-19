@@ -14,3 +14,9 @@
     background-color: $five-bg-color;
   }
 }
+
+.developer-link__text {
+  @media (min-width: $tablet-width) {
+    margin-right: 23px;
+  }
+}

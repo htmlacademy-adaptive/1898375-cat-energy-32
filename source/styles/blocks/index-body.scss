@@ -1,4 +1,52 @@
 .index-body {
   @include text-format ($primary-font, 14px, 129%, $primary-text-color);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   background-color: $primary-bg-color;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 150%;
+  }
+}
+
+.index-body__main-header {
+  width: 320px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+  }
+}
+
+.index-body__main {
+  width: 320px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+  }
+}
+
+.index-body__main-footer {
+  width: 320px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+  }
 }

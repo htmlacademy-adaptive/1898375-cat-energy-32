@@ -1,6 +1,15 @@
 .map {
   padding-bottom: 20px;
   background-color: $second-bg-color;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    padding-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+  }
 }
 
 .map__text-wrapper {
@@ -8,22 +17,53 @@
   flex-wrap: wrap;
   gap: 17px;
   padding: 26px 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 60px 70px;
+    justify-content: space-between;
+    background-color: $primary-bg-color;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 95px;
+    left: 105px;
+    width: 565px;
+  }
+}
+
+.map__text-wrapper--change-background {
+  @media (min-width: $tablet-width) {
+    background-color: $second-bg-color;
+  }
 }
 
 .map__slogan {
   @include text-format ($second-font, 16px, 125%, $second-text-color);
   margin: 0;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 130%;
+  }
 }
 
 .map__text {
   margin: 0;
   font-size: 14px;
   line-height: 143%;
+
+  @media (min-width: $tablet-width) {
+    text-align: end;
+    font-size: 16px;
+    line-height: 125%;
+  }
 }
 
-.map__canvas {
-  width: 320px;
-  height: 326px;
-  background-color: #666666;
+.map__text span {
+  @media (min-width: $tablet-width) {
+    display: inline-block;
+    margin-top: 19px;
+  }
 }

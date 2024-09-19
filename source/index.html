@@ -15,8 +15,8 @@
 
 <body class="page__body index-body">
 
-  <header class="main-header">
-    <nav class="main-header__navigation">
+  <header class="index-body__main-header main-header">
+    <nav class="main-header__navigation main-navigation main-navigation--closed main-navigation--nojs">
       <a class="main-header__logo" href="#">
         <picture>
           <source media="(min-width: 1440px)" srcset="images/logo-tablet.svg" width="70" height="59" type="image/svg+xml">
@@ -25,92 +25,96 @@
         </picture>
         <img class="main-header__logo-text" src="images/logo-text.svg" width="101" height="18" alt="Название магазина.">
       </a>
-      <button class="main-header__menu-button" type="button" aria-label="Открыть меню"></button>
-      <ul class="main-header__list">
-        <li class="main-header__item">
-          <a class="main-header__link main-header__link--active" href="#">
-            Главная
-            <span class="visually-hidden">Переход на главную страницу сайта.</span>
-          </a>
-        </li>
-        <li class="main-header__item">
-          <a class="main-header__link" href="catalog.html">
-            Каталог продукции
-            <span class="visually-hidden">Переход на страницу каталога.</span>
-          </a>
-        </li>
-        <li class="main-header__item">
-          <a class="main-header__link" href="#">
-            Подбор программы
-            <span class="visually-hidden">Переход на страницу подбора программы.</span>
-          </a>
-        </li>
-      </ul>
+      <button class="main-navigation__menu-button" type="button" aria-label="Открыть меню"></button>
+      <div class="main-navigation__inner-wrapper">
+        <ul class="main-navigation__list navigation-list">
+          <li class="navigation-list__item">
+            <a class="navigation-list__link main-header-link main-header-link--active" href="#">
+              Главная
+              <span class="visually-hidden">Переход на главную страницу сайта.</span>
+            </a>
+          </li>
+          <li class="navigation-list__item">
+            <a class="navigation-list__link main-header-link" href="catalog.html">
+              Каталог продукции
+              <span class="visually-hidden">Переход на страницу каталога.</span>
+            </a>
+          </li>
+          <li class="navigation-list__item">
+            <a class="navigation-list__link main-header-link" href="#">
+              Подбор программы
+              <span class="visually-hidden">Переход на страницу подбора программы.</span>
+            </a>
+          </li>
+        </ul>
+      </div>
     </nav>
   </header>
 
   <main class="index-body__main main-index">
     <h1 class="visually-hidden">Магазин Кэт энерджи.</h1>
 
-    <section class="main-index__hero hero">
-      <h2 class="hero__title section-title section-title--change-color">Функциональное питание для котов</h2>
+    <section class="hero">
+      <h2 class="hero__title section-title section-title--change-color">Функциональное<br> питание для котов</h2>
       <p class="hero__slogan">Занялся собой? Займись котом!</p>
       <a class="hero__button primary-button" href="#">Подобрать программу</a>
       <picture>
-        <source media="(min-width: 1280px)" width="552" height="499" type="image/png" srcset="images/catfood-desktop@1x.png 1x, images/catfood-desktop@2x.png 2x">
+        <source media="(min-width: 1440px)" width="552" height="499" type="image/png" srcset="images/catfood-desktop@1x.png 1x, images/catfood-desktop@2x.png 2x">
         <source media="(min-width: 768px)" width="709" height="609" type="image/png" srcset="images/catfood-tablet@1x.png 1x, images/catfood-tablet@2x.png 2x">
         <img class="hero__image" width="280" height="270" src="images/catfood-mobile@1x.png" srcset="images/catfood-mobile@2x.png 2x" alt="Пластиковая банка кошачьей еды.">
       </picture>
     </section>
 
-    <section class="main-index__product-section product-section">
+    <section class="product-section">
       <h2 class="visually-hidden">Программы питания</h2>
       <ul class="product-section__list product-list">
-        <li class="product-section__item product-section__item--slim-cat">
+        <li class="product-list__item product-list__item--slim-cat">
           <h3 class="product-list__title">Похудение</h3>
-          <p class="product-list__description">Ваш кот весит больше собаки и почти утратил способность<br> лазить по деревьям? Пора на диету! Cat Energy Slim поможет<br> вашему питомцу сбросить лишний вес.</p>
+          <p class="product-list__description">Ваш кот весит больше собаки и<br> почти утратил способность лазить<br> по деревьям? Пора на диету! Cat<br> Energy Slim поможет вашему<br> питомцу сбросить лишний вес.</p>
           <a class="product-list__link" href="#">Каталог slim</a>
         </li>
-        <li class="product-section__item product-section__item--strong-cat">
+        <li class="product-list__item product-list__item--strong-cat">
           <h3 class="product-list__title">Набор массы</h3>
-          <p class="product-list__description">Заработать авторитет среди дворовых котов и даже собак?<br> Серия Cat Energy Pro поможет вашему коту нарастить<br> необходимые мышцы!</p>
+          <p class="product-list__description">Заработать авторитет среди<br> дворовых котов и даже собак?<br> Серия Cat Energy Pro поможет<br> вашему коту нарастить<br> необходимые мышцы!</p>
           <a class="product-list__link" href="#">Каталог pro</a>
         </li>
       </ul>
     </section>
 
-    <section class="main-index__description-section description-section">
+    <section class="description-section">
       <h2 class="description-section__title section-title">Как это работает</h2>
-      <ul class="description-section__list">
-        <li class="description-section__item description-section__item--leaf-style">
+      <ul class="description-section__list description-list">
+        <li class="description-list__item description-list__item--leaf-style">
           <p class="description-section__text">Функциональное питание<br> содержит только полезные<br> питательные вещества.</p>
         </li>
-        <li class="description-section__item description-section__item--powder-style">
+        <li class="description-list__item description-list__item--powder-style">
           <p class="description-section__text">Выпускается в виде порошка,<br> который нужно лишь залить<br> кипятком и готово.</p>
         </li>
-        <li class="description-section__item description-section__item--cutlery-style">
+        <li class="description-list__item description-list__item--cutlery-style">
           <p class="description-section__text">Замените один-два приема<br> обычной еды на наше<br> функциональное питание.</p>
         </li>
-        <li class="description-section__item description-section__item--clock-style">
+        <li class="description-list__item description-list__item--clock-style">
           <p class="description-section__text">Уже через месяц<br> наслаждайтесь изменениями<br> к лучшему вашего питомца!</p>
         </li>
       </ul>
     </section>
 
-    <section class="main-index__case-section case-section">
+    <section class="case-section">
       <div class="case-section__description-wrapper">
-        <h2 class="section-title">Живой пример</h2>
+        <h2 class="case-section__title section-title">Живой пример</h2>
         <p class="case-section__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своихпривычек и по-прежнему спит по 16 часов в день.</p>
-        <div class="case-section__argument argument">
-          <p class="argument__parameter">
-            5 кг
-            <span class="argument__parameter-description">снижение веса</span>
-          </p>
-          <p class="argument__parameter">
-            60 дней
-            <span class="argument__parameter-description">затрачено времени</span>
-          </p>
-          <p class="argument__price">
+        <div class="case-result">
+          <div class="case-result__wrapper parameters">
+            <p class="case-section__parameter case-result__parameter">
+              5 кг
+              <span class="case-result__parameter-description">снижение<br> веса</span>
+            </p>
+            <p class="case-section__parameter case-result__parameter">
+              60 дней
+              <span class="case-result__parameter-description">затрачено<br> времени</span>
+            </p>
+          </div>
+          <p class="case-price">
             <span>Затраты на питание:</span>
             <span>15 000 руб.</span>
           </p>
@@ -135,29 +139,33 @@
       <div class="map__text-wrapper">
         <h2 class="visually-hidden">Карта проезда в магазин.</h2>
         <p class="map__slogan">приглашаем<br> к сотрудничеству<br> дилеров!</p>
-        <p class="map__text">ул. Большая<br> Конюшенная, д. 19/8<br> Санкт-Петербург</p>
+        <p class="map__text">ул. Большая<br>Конюшенная, д. 19/8<br><span>Санкт-Петербург</span></p>
       </div>
-      <div class="map__canvas"></div>
+      <picture>
+        <source media="(min-width: 1440px)" width="1440" height="400" type="image/jpg" srcset="images/map-desktop@1x.jpg 1x, images/map-desktop@2x.jpg 2x">
+        <source media="(min-width: 768px)" width="768" height="400" type="image/jpg" srcset="images/map-tablet@1x.jpg 1x, images/map-tablet@2x.jpg 2x">
+        <img class="map__image" width="320" height="362" src="images/map-mobile@1x.jpg" srcset="images/map-mobile@2x.jpg 2x" alt="Адресс магазина.">
+      </picture>
     </section>
 
   </main>
 
-  <footer class="main-footer">
+  <footer class="index-body__main-footer main-footer">
     <h2 class="visually-hidden">Контакты и полезная информация.</h2>
     <a class="main-footer__logo" href="#">
-      <img class="main-footer__logo-text" src="images/logo-text.svg" width="101" height="18" alt="Название магазина.">
+      <img class="main-footer__logo-text " src="images/logo-text.svg" width="101" height="18" alt="Название магазина.">
     </a>
-    <ul class="main-footer__list">
+    <ul class="main-footer__list footer-list">
       <li class="main-footer__list-item">
-        <a class="main-footer__link main-footer__link--vkontakte-style" href="#" aria-label="Переход на страницу магазина во Вконтакте.">
+        <a class="footer-list__link footer-list__link--vkontakte-style" href="#" aria-label="Переход на страницу магазина во Вконтакте.">
         </a>
       </li>
       <li class="main-footer__list-item">
-        <a class="main-footer__link main-footer__link--youtube-style" href="#" aria-label="Переход на канал магазина в Ютуб.">
+        <a class="footer-list__link footer-list__link--youtube-style" href="#" aria-label="Переход на канал магазина в Ютуб.">
         </a>
       </li>
       <li class="main-footer__list-item">
-        <a class="main-footer__link main-footer__link--telegram-style" href="#" aria-label="Переход в группу магазина в Телеграм.">
+        <a class="footer-list__link footer-list__link--telegram-style" href="#" aria-label="Переход в группу магазина в Телеграм.">
         </a>
       </li>
     </ul>

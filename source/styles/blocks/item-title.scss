@@ -1,4 +1,19 @@
 .item-title {
   @include text-format ($second-font, 16px, 125%, $second-text-color);
+  font-weight: 400;
   text-transform: uppercase;
+
+  & br:nth-child(1) {
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+
+  & br:nth-child(2) {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: inline-block;
+    }
+  }
 }

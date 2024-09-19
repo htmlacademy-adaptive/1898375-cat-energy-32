@@ -1,47 +1,52 @@
 
 .description-section {
+  position: relative;
   padding: 10px 20px 49px;
+
+  @media (min-width: $tablet-width) {
+    padding: 45px 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 40px 106px 40px 110px;
+  }
+
+  &::after {
+    @media (min-width: $tablet-width) {
+      @include common-pseudo (768px, 1px);
+      position: absolute;
+      top: 96%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #e6e6e6;
+    }
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
 }
 
 .description-section__title {
   margin: 0;
   margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 72px;
+  }
 }
 
 .description-section__list {
-  display: grid;
-  gap: 20px;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.description-section__item {
-  display: flex;
-  align-items: center;
-}
-
-.description-section__item--leaf-style::before {
-  @include common-pseudo (60px, 60px);
-  background-image: url("../../icons/stack.svg#leaf");
-}
-
-.description-section__item--powder-style::before {
-  @include common-pseudo (60px, 60px);
-  background-image: url("../../icons/stack.svg#powder");
-}
-
-.description-section__item--cutlery-style::before {
-  @include common-pseudo (60px, 60px);
-  background-image: url("../../icons/stack.svg#cutlery");
-}
-
-.description-section__item--clock-style::before {
-  @include common-pseudo (60px, 60px);
-  background-image: url("../../icons/stack.svg#clock");
-}
-
 .description-section__text {
   margin: 0;
   margin-left: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 0;
+  }
 }

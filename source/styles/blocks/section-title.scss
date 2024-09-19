@@ -1,8 +1,8 @@
 .section-title {
   @include text-format ($second-font, 36px, 100%, $second-text-color);
-  font-weight: 700;
-}
+  font-weight: 400;
 
-.section-title--change-color {
-  color: $third-text-color;
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+  }
 }

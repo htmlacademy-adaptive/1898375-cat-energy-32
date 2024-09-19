@@ -1,0 +1,19 @@
+.case-price {
+  @include text-format ($second-font, 14px, 143%, $second-text-color);
+  display: flex;
+  gap: 3px;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+    align-items: end;
+    gap: 9px;
+    font-size: 20px;
+    line-height: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    gap: 63px;
+  }
+}

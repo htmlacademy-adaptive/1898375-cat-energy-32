@@ -1,0 +1,22 @@
+.main-catalog {
+  padding-top: 27px;
+
+  @media (min-width: $desktop-width) {
+    padding-top: 140px;
+  }
+}
+
+.main-catalog__title {
+  margin: 0;
+  margin-left: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 30px;
+    margin-bottom: 125px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 110px;
+    margin-bottom: 125px;
+  }
+}

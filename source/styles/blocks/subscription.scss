@@ -1,20 +1,100 @@
+.subscription {
+  padding: 20px 20px 40px;
+
+  @media (min-width: $tablet-width) {
+    padding: 40px 30px 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    padding: 111px 110px 104px;
+  }
+}
+
+.subscription__title {
+  margin: 0;
+  margin-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    display: inline-block;
+    padding: 0 40px;
+    margin-bottom: 66px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 0;
+    left: 69px;
+    margin-bottom: 0;
+  }
+}
+
+.subscription__form {
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.subscription__inner-wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 .subscription__slogan {
   @include text-format ($second-font, 16px, 150%, $second-text-color);
+  display: inline-block;
+  margin-bottom: 24px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 133%;
+  }
+}
+
+.subscription__slogan br {
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }
 
 .subscription__input {
+  @include text-format ($second-font, 20px, 150%, $primary-text-color);
   width: 280px;
   padding: 13px;
+  margin-bottom: 16px;
   border: 1px solid #cdcdcd;
   font-size: 20px;
   line-height: 150%;
   text-transform: uppercase;
-  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    width: 376px;
+    margin-bottom: 0;
+  }
 }
 
 .subscription__input::placeholder {
-  font-size: 20px;
-  line-height: 150%;
+  @include text-format ($second-font, 20px, 150%, $primary-text-color);
   text-transform: uppercase;
-  text-align: center;
+  text-align: start;
+}
+
+.subscription__button {
+  width: 280px;
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    width: 256px;
+    padding: 15px;
+    font-size: 20px;
+    line-height: 130%;
+  }
 }
