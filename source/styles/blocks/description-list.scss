@@ -28,16 +28,12 @@
 }
 
 .description-list__item--leaf-style {
-  @media (min-width: $desktop-width) {
-    width: 230px;
-    padding-top: 40px;
-    padding-bottom: 57px;
-    margin-right: 94px;
-  }
-
   &::before {
     @include common-pseudo (60px, 60px);
-    background-image: url("../../icons/stack.svg#leaf");
+    background: url("../../icons/stack.svg#leaf"), $third-bg-color;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 26px 31px, 100%;
 
     @media (min-width: $tablet-width) {
       width: 80px;
@@ -52,28 +48,31 @@
       content: "1";
       position: absolute;
       top: -39px;
-      right: 0;
+      right: 25px;
       z-index: -1;
     }
 
     @media (min-width: $desktop-width) {
-      top: -1px;
+      top: -41px;
+      right: 6px;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 230px;
+    padding-bottom: 57px;
+    margin-right: 94px;
   }
 }
 
 
 .description-list__item--powder-style {
-  @media (min-width: $desktop-width) {
-    width: 246px;
-    padding-top: 40px;
-    padding-bottom: 57px;
-    margin-right: 80px;
-  }
-
   &::before {
     @include common-pseudo (60px, 60px);
-    background-image: url("../../icons/stack.svg#powder");
+    background: url("../../icons/stack.svg#powder"), $third-bg-color;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 26px 31px, 100%;
 
     @media (min-width: $tablet-width) {
       width: 80px;
@@ -88,28 +87,29 @@
       content: "2";
       position: absolute;
       top: -39px;
-      right: 0;
+      right: 5px;
       z-index: -1;
     }
 
     @media (min-width: $desktop-width) {
-      top: -1px;
+      top: -41px;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 246px;
+    padding-bottom: 57px;
+    margin-right: 80px;
   }
 }
 
 .description-list__item--cutlery-style {
-  @media (min-width: $desktop-width) {
-    top: -1px;
-    width: 248px;
-    padding-top: 40px;
-    padding-bottom: 57px;
-    margin-right: 76px;
-  }
-
   &::before {
     @include common-pseudo (60px, 60px);
-    background-image: url("../../icons/stack.svg#cutlery");
+    background: url("../../icons/stack.svg#cutlery"), $third-bg-color;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 26px 31px, 100%;
 
     @media (min-width: $tablet-width) {
       width: 80px;
@@ -129,23 +129,26 @@
     }
 
     @media (min-width: $desktop-width) {
-      top: -1px;
+      top: -41px;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -1px;
+    width: 248px;
+    padding-bottom: 57px;
+    margin-right: 76px;
   }
 }
 
 
 .description-list__item--clock-style {
-  @media (min-width: $desktop-width) {
-    top: -1px;
-    width: 250px;
-    padding-top: 40px;
-    padding-bottom: 57px;
-  }
-
   &::before {
     @include common-pseudo (60px, 60px);
-    background-image: url("../../icons/stack.svg#clock");
+    background: url("../../icons/stack.svg#clock"), $third-bg-color;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 26px 31px, 100%;
 
     @media (min-width: $tablet-width) {
       width: 80px;
@@ -165,7 +168,13 @@
     }
 
     @media (min-width: $desktop-width) {
-      top: -1px;
+      top: -41px;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -1px;
+    width: 250px;
+    padding-bottom: 57px;
   }
 }

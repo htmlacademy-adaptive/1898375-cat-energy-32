@@ -39,3 +39,16 @@
   mask-image: url("../../icons/stack.svg#telegram");
   background-color: $five-bg-color;
 }
+
+
+.footer-list__link--vkontakte-style,
+.footer-list__link--youtube-style,
+.footer-list__link--telegram-style {
+  &:is(:hover, :focus, :focus-visible, :active)::before {
+    background-color: $third-bg-color;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

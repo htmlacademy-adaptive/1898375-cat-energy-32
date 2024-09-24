@@ -16,4 +16,9 @@
       display: inline-block;
     }
   }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 120%;
+  }
 }

@@ -1,3 +1,9 @@
+.main-navigation {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
 .main-navigation--opened {
   background-color: $primary-bg-color;
 }

@@ -13,7 +13,7 @@
 .product-list__item {
   position: relative;
   padding: 30px 20px 18px;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   background-color: $second-bg-color;
 
   &:last-child {
@@ -23,12 +23,18 @@
   @media (min-width: $tablet-width) {
     box-sizing: border-box;
     width: 708px;
+    margin-bottom: 30px;
     padding: 77px 29px 53px 52px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 
   @media (min-width: $desktop-width) {
     width: 570;
     padding-bottom: 59px;
+    margin-bottom: 0;
   }
 }
 
@@ -48,6 +54,7 @@
 
   @media (min-width: $desktop-width) {
     margin-left: 165px;
+    margin-bottom: 73px;
   }
 }
 
@@ -63,14 +70,14 @@
   background-size: cover;
 
   @media (min-width: $tablet-width) {
-    top: 78px;
-    left: 450px;
+    top: 80px;
+    left: 445px;
     width: 200px;
     height: 211px;
   }
 
   @media (min-width: $desktop-width) {
-    top: 24px;
+    top: 38px;
     left: 52px;
     width: 100px;
     height: 106px;
@@ -89,14 +96,14 @@
   background-size: cover;
 
   @media (min-width: $tablet-width) {
-    top: 78px;
-    left: 418px;
+    top: 93px;
+    left: 408px;
     width: 268px;
     height: 200px;
   }
 
   @media (min-width: $desktop-width) {
-    top: 34px;
+    top: 45px;
     left: 31px;
     width: 134px;
     height: 100px;
@@ -109,10 +116,12 @@
 
   @media (min-width: $tablet-width) {
     width: 340px;
+    margin-bottom: 48px;
   }
 
   @media (min-width: $desktop-width) {
     width: 457px;
+    margin-bottom: 23px;
   }
 }
 
@@ -121,22 +130,15 @@
 }
 
 .product-list__link {
-  @include text-format ($second-font, 16px, 100%, $second-text-color);
-  text-transform: uppercase;
-
-  @media (min-width: $tablet-width) {
-    display: flex;
-    align-items: center;
-    font-size: 20px;
-    line-height: 150%;
-  }
+  width: 133px;
+  height: 24px;
 
   &::before {
     content: " ";
     display: block;
     width: 240px;
     height: 1px;
-    margin-bottom: 15px;
+    margin-bottom: 19px;
     background-color: #d9d9d9;
 
     @media (min-width: $tablet-width) {
@@ -152,5 +154,19 @@
     margin-left: 15px;
     mask-image: url("../../icons/stack.svg#arrow");
     background-color: $fourth-bg-color;
+    transition: transform 0.3s linear;
+    transform-origin: left center;
+
+    @media (min-width: $tablet-width) {
+      margin-left: 25px;
+    }
+  }
+
+  &:is(:hover, :focus, :focus-visible, :active)::after {
+    transform: scaleX(1.35);
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }

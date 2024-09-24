@@ -1,13 +1,13 @@
 .subscription {
-  padding: 20px 20px 40px;
+  padding: 0 20px;
 
   @media (min-width: $tablet-width) {
-    padding: 40px 30px 80px;
+    padding: 0 30px;
   }
 
   @media (min-width: $desktop-width) {
     position: relative;
-    padding: 111px 110px 104px;
+    padding: 112px 110px 0;
   }
 }
 
@@ -60,23 +60,37 @@
 }
 
 .subscription__slogan br {
-  @media (min-width: $desktop-width) {
+  &:nth-child(2) {
     display: none;
+
+    @media (min-width: $tablet-width) {
+      display: block;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: none;
+    }
+  }
+
+  &:nth-child(1) {
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
   }
 }
 
 .subscription__input {
-  @include text-format ($second-font, 20px, 150%, $primary-text-color);
   width: 280px;
-  padding: 13px;
   margin-bottom: 16px;
-  border: 1px solid #cdcdcd;
-  font-size: 20px;
-  line-height: 150%;
-  text-transform: uppercase;
+
 
   @media (min-width: $tablet-width) {
     width: 376px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 496px;
     margin-bottom: 0;
   }
 }

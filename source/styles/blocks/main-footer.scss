@@ -7,7 +7,7 @@
   background-color: $second-bg-color;
 
   @media (min-width: $tablet-width) {
-    padding: 62px 30px;
+    padding: 55px 30px;
     flex-direction: row;
     align-items: center;
     justify-content: start;
@@ -15,18 +15,15 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 72.5px 110px;
+    padding: 65.5px 110px;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
   }
 }
 
 .main-footer__logo {
   width: 128px;
   height: 24px;
-  display: flex;
-  align-items: center;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
@@ -35,7 +32,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-right: 0;
+    margin-right: 416px;
   }
 }
 
@@ -72,10 +69,6 @@
 
   @media (min-width: $tablet-width) {
     margin-right: auto;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-right: 0;
   }
 }
 

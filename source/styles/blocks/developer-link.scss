@@ -13,6 +13,14 @@
     mask-image: url("../../icons/stack.svg#developer");
     background-color: $five-bg-color;
   }
+
+  &:is(:hover, :focus, :focus-visible, :active)::after {
+    background-color: $third-bg-color;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .developer-link__text {

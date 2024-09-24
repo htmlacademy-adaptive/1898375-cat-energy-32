@@ -5,11 +5,12 @@
 
   @media (min-width: $tablet-width) {
     justify-content: space-between;
+    align-items: center;
   }
 }
 
 .case-result__wrapper {
-  margin-bottom: 35px;
+  margin-bottom: 34px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
@@ -31,9 +32,13 @@
 
   @media (min-width: $tablet-width) {
     width: 162px;
-    height: 72px;
+    height: 78px;
     font-size: 30px;
     line-height: 123%;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 68px;
   }
 }
 

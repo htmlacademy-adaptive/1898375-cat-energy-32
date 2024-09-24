@@ -3,6 +3,14 @@
   padding: 22px 0;
   text-transform: uppercase;
 
+  &:hover {
+    color: #666666;
+  }
+
+  &:active {
+    color: #b3b3b3;
+  }
+
   @media (min-width: $tablet-width) {
     padding: 0;
     font-size: 18px;
@@ -17,4 +25,29 @@
 
 .main-header-link--change-color {
   color: $second-text-color;
+}
+
+.main-header-link--change-hover {
+  &:hover {
+    color: #bfdbaf;
+  }
+
+  &:active {
+    color: #93c977;
+  }
+}
+
+.main-header-link--active {
+  @media (min-width: $tablet-width) {
+    text-decoration-line: underline;
+    text-underline-offset: 7px;
+    text-decoration-thickness: 2px;
+    text-decoration-color: $third-bg-color;
+  }
+}
+
+.main-header-link--active-index {
+  @media (min-width: $desktop-width) {
+    text-decoration-color: $primary-bg-color;
+  }
 }

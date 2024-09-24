@@ -1,5 +1,4 @@
 .main-header {
-  position: relative;
   padding: 13px 20px 14px;
 
   @media (min-width: $tablet-width) {
@@ -7,23 +6,11 @@
   }
 
   @media (min-width: $desktop-width) {
-    position: absolute;
-    top: 2%;
-    left: 58%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
+    padding: 0;
   }
 }
 
-.main-header__navigation {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
 .main-header__logo {
-  display: flex;
-  align-items: center;
   margin-right: 65px;
 
   @media (min-width: $tablet-width) {
@@ -31,7 +18,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-right: 541px;
+    margin-right: auto;
   }
 }
 
@@ -41,6 +28,13 @@
 
   @media (min-width: $tablet-width) {
     margin-right: 13px;
+  }
+}
+
+.main-header__logo-text {
+  @media (min-width: $desktop-width) {
+    width: 118px;
+    height: 24px;
   }
 }
 

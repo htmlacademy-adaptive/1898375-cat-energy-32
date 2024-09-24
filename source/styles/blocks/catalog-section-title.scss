@@ -3,11 +3,6 @@
   position: relative;
   font-weight: 400;
 
-  @media (min-width: $tablet-width) {
-    font-size: 32px;
-    background-color: $primary-bg-color;
-  }
-
   &::after {
     @include common-pseudo (34px, 2px);
     position: absolute;
@@ -24,8 +19,17 @@
 
     @media (min-width: $desktop-width) {
       width: 1440px;
-      left: 172%;
+      left: 143%;
     }
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 32px;
+    background-color: $primary-bg-color;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 40px;
   }
 }
 
@@ -42,7 +46,7 @@
 
     @media (min-width: $desktop-width) {
       width: 1440px;
-      left: 231%;
+      left: 195%;
       z-index: -1;
     }
   }

@@ -1,0 +1,9 @@
+.product-link {
+  @include text-format ($second-font, 16px, 100%, $second-text-color);
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 150%;
+  }
+}
