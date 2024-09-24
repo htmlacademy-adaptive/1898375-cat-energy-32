@@ -32,11 +32,13 @@
   @media (min-width: $tablet-width) {
     position: static;
     width: unset;
+    max-width: 436px;
     transform: none;
     z-index: 0;
   }
 
   @media (min-width: $desktop-width) {
+    max-width: 475px;
     background-color: inherit;
   }
 }

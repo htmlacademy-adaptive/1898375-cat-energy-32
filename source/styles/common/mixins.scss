@@ -28,3 +28,16 @@
   width: $width;
   height: $height;
 }
+
+@mixin common-wrapper ($mobile, $tablet, $desktop) {
+  width: $mobile;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop;
+  }
+}

@@ -51,28 +51,6 @@
   }
 }
 
-.catalog-body__main {
-  width: 320px;
-  margin: 0 auto;
-
-  @media (min-width: $tablet-width) {
-    width: 768px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 1440px;
-  }
-}
-
-.catalog-body__main-footer {
-  width: 320px;
-  margin: 0 auto;
-
-  @media (min-width: $tablet-width) {
-    width: 768px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 1440px;
-  }
+.catalog-body__main-footer-wrapper {
+  @include common-wrapper (320px, 768px, 1440px);
 }

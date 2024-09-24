@@ -178,3 +178,9 @@
     padding-bottom: 57px;
   }
 }
+
+.description-list__item--clock-style br:nth-child(odd) {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}

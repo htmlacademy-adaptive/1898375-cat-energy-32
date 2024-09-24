@@ -1,6 +1,9 @@
 .map {
-  padding-bottom: 20px;
   background-color: $second-bg-color;
+}
+
+.map__wrapper {
+  padding-bottom: 20px;
 
   @media (min-width: $tablet-width) {
     position: relative;
@@ -38,6 +41,10 @@
 .map__text-wrapper--change-background {
   @media (min-width: $tablet-width) {
     background-color: $second-bg-color;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $primary-bg-color;
   }
 }
 

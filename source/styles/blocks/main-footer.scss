@@ -1,21 +1,28 @@
 .main-footer {
+  background-color: $second-bg-color;
+}
+
+.main-footer__wrapper {
+  width: 320px;
+  margin: 0 auto;
+  padding: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 20px;
   gap: 40px;
-  background-color: $second-bg-color;
 
   @media (min-width: $tablet-width) {
+    width: 768px;
     padding: 55px 30px;
     flex-direction: row;
     align-items: center;
-    justify-content: start;
+    justify-content: space-between;
     gap: 0;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 65.5px 110px;
+    width: 1440px;
+    padding: 73.5px 110px;
     flex-direction: row;
     align-items: center;
   }
@@ -28,11 +35,6 @@
 
   @media (min-width: $tablet-width) {
     margin: 0;
-    margin-right: 160px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-right: 416px;
   }
 }
 
@@ -64,11 +66,12 @@
 
 .main-footer__list {
   position: relative;
+  max-width: 132px;
   margin: 0;
   list-style: none;
 
   @media (min-width: $tablet-width) {
-    margin-right: auto;
+    margin-left: 35px;
   }
 }
 
