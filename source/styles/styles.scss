@@ -1,7 +1,44 @@
 /* GLOBAL */
 @import "./common/variables.scss";
-@import "./common/global.scss";
+@import "./common/mixins.scss";
 @import "./common/fonts.scss";
+@import "./common/global.scss";
+@import "./common/visually-hidden.scss";
 
 /* BLOCKS */
-@import "./blocks/header.scss";
+@import "./blocks/index-body.scss";
+@import "./blocks/catalog-body.scss";
+@import "./blocks/primary-button.scss";
+@import "./blocks/section-title.scss";
+@import "./blocks/main-header.scss";
+@import "./blocks/logo-link.scss";
+@import "./blocks/main-navigation.scss";
+@import "./blocks/navigation-list.scss";
+@import "./blocks/main-header-link.scss";
+@import "./blocks/main-index.scss";
+@import "./blocks/hero.scss";
+@import "./blocks/product-section.scss";
+@import "./blocks/product-list.scss";
+@import "./blocks/product-link.scss";
+@import "./blocks/description-section.scss";
+@import "./blocks/description-list.scss";
+@import "./blocks/case-section.scss";
+@import "./blocks/case-result.scss";
+@import "./blocks/parameters.scss";
+@import "./blocks/case-price.scss";
+@import "./blocks/main-catalog.scss";
+@import "./blocks/catalog.scss";
+@import "./blocks/catalog-list.scss";
+@import "./blocks/item-title.scss";
+@import "./blocks/catalog-section-title.scss";
+@import "./blocks/additional-products.scss";
+@import "./blocks/additional-products-list.scss";
+@import "./blocks/inner-list.scss";
+@import "./blocks/gift-wrapper.scss";
+@import "./blocks/subscription.scss";
+@import "./blocks/catalog-input.scss";
+@import "./blocks/map.scss";
+@import "./blocks/main-footer.scss";
+@import "./blocks/logo-link-text.scss";
+@import "./blocks/footer-list.scss";
+@import "./blocks/developer-link.scss";

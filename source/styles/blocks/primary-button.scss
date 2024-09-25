@@ -1,0 +1,47 @@
+.primary-button {
+  @include text-format ($second-font, 16px, 130%, $third-text-color);
+  padding: 10px;
+  background-color: $third-bg-color;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    background-color: #5eaa2f;
+    color: rgb(255, 255, 255, 0.3);
+  }
+
+  @media (min-width: $tablet-width) {
+    line-height: 125%;
+  }
+}
+
+.primary-button--hero-style {
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 130%;
+    padding: 14px 26px;
+  }
+}
+
+
+.primary-button--subscription-style {
+  font-size: 20px;
+  line-height: 130%;
+  padding: 15px 10px;
+}
+
+
+.primary-button--empty-version {
+  color: $primary-text-color;
+  background-color: $second-bg-color;
+
+  &:is(:hover, :focus, :focus-visible, :active) {
+    background-color: #ebebeb;
+  }
+}

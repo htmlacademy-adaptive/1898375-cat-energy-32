@@ -1,0 +1,118 @@
+.map {
+  background-color: $second-bg-color;
+}
+
+.map__wrapper {
+  padding-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    padding-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+  }
+}
+
+.map__text-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 17px;
+  padding: 26px 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 60px 70px;
+    justify-content: space-between;
+    background-color: $primary-bg-color;
+    z-index: 1;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 96px;
+    left: 109px;
+    width: 565px;
+    padding: 60px 78px 60px 80px;
+    z-index: 2;
+  }
+}
+
+.map__text-wrapper--change-background {
+  @media (min-width: $tablet-width) {
+    background-color: $second-bg-color;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $primary-bg-color;
+  }
+}
+
+.map__slogan {
+  @include text-format ($second-font, 16px, 125%, $second-text-color);
+  margin: 0;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 130%;
+  }
+}
+
+.map__text {
+  margin: 0;
+  font-size: 14px;
+  line-height: 143%;
+
+  @media (min-width: $tablet-width) {
+    text-align: end;
+    font-size: 16px;
+    line-height: 125%;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: start;
+  }
+}
+
+.map__text span {
+  @media (min-width: $tablet-width) {
+    display: inline-block;
+    margin-top: 19px;
+  }
+}
+
+.map__image-wrapper {
+  position: relative;
+  width: 320px;
+  height: 362px;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    height: 400px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+  }
+}
+
+.map iframe {
+  @include absolute-center();
+  border: none;
+  display: block;
+  z-index: 1;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    height: 400px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+  }
+}
+
+.map__image {
+  @include absolute-center();
+}

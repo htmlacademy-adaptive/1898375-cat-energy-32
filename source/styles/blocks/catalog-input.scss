@@ -1,0 +1,23 @@
+.catalog-input {
+  @include text-format ($second-font, 20px, 150%, $primary-text-color);
+  padding: 12px;
+  border: 1px solid #e7e7e7;
+  text-transform: uppercase;
+
+  &:hover {
+    border-color: #cdcdcd;
+  }
+
+  &:focus-visible,
+  :focus {
+    border-color: #444444;
+    outline: 1px solid #444444;
+    outline-offset: -2px;
+  }
+
+  &:invalid {
+    border-color: #ff8282;
+    outline: 1px solid #ff8282;
+    outline-offset: -2px;
+  }
+}

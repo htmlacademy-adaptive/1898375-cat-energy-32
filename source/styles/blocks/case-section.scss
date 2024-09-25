@@ -1,0 +1,190 @@
+.case-section {
+  background-color: #eaeaea;
+
+  @media (min-width: $tablet-width) {
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255) 55%, rgb(242, 242, 242) 38%),;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255) 23%, rgb(242, 242, 242) 18%),;
+  }
+}
+
+.case-section__wrapper {
+  padding: 25px 20px 40px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px 101px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 110px 75px;
+  }
+}
+
+.case-section__description-wrapper {
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 104px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 436px;
+    margin-bottom: 0;
+  }
+}
+
+.case-section__title {
+  margin: 0;
+  margin-bottom: 40px;
+  line-height: 111%;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 146px;
+    line-height: 100%;
+  }
+}
+
+.case-section__text {
+  margin: 0;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 69px;
+  }
+}
+
+.case-section__parameter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.case-result__parameter-description {
+  text-transform: none;
+}
+
+.case-result__price {
+  margin: 0;
+}
+
+.case-section__img-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+
+  @media (min-width: $desktop-width) {
+    width: 560px;
+  }
+}
+
+.case-section__img-befo,
+.case-section__img-after {
+  width: 140px;
+  height: 256px;
+
+  @media (min-width: $tablet-width) {
+    width: 280px;
+    height: 512px;
+  }
+}
+
+.case-section__img-befo {
+  object-fit: cover;
+  object-position: 0;
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+
+  @media (min-width: $tablet-width) {
+    left: 30%;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 25%;
+  }
+}
+
+.case-section__img-after {
+  object-fit: cover;
+  object-position: -140px;
+  position: absolute;
+  top: 50%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+
+  @media (min-width: $tablet-width) {
+    left: 70%;
+    object-position: -282px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 75%;
+  }
+}
+
+.case-section__toggle-button {
+  position: relative;
+  width: 4px;
+  height: 256px;
+  padding: 0;
+  border: none;
+  border-radius: 2px;
+  background-color: $five-bg-color;
+  z-index: 1;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    height: 512px;
+  }
+
+  &:is(:hover, :focus-visible, :focus) {
+    background-color: $third-bg-color;
+  }
+
+  &:is(:active) {
+    background-color: #5eaa2f;
+  }
+
+  &::before {
+    @include absolute-center;
+    content: " ";
+    width: 40px;
+    height: 40px;
+    border: 2px solid $five-bg-color;
+    border-radius: 50%;
+    background-color: $primary-bg-color;
+    z-index: 2;
+  }
+
+  &::after {
+    @include absolute-center;
+    content: " ";
+    width: 24px;
+    height: 18px;
+    mask-image: url("../../icons/stack.svg#double-trigon");
+    background-color: $five-bg-color;
+    z-index: 3;
+  }
+
+  &:is(:hover, :focus-visible, :focus)::before {
+    border-color: $third-bg-color;
+  }
+
+  &:is(:hover, :focus-visible, :focus)::after {
+    background-color: $third-bg-color;
+  }
+}
