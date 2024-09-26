@@ -3,11 +3,8 @@
 }
 
 .map__wrapper {
-  padding-bottom: 20px;
-
   @media (min-width: $tablet-width) {
     position: relative;
-    padding-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -115,4 +112,5 @@
 
 .map__image {
   @include absolute-center();
+  object-fit: cover;
 }

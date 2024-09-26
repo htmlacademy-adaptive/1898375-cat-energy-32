@@ -22,6 +22,7 @@
 
 .main-navigation__inner-wrapper {
   width: 320px;
+  padding-top: 7px;
   position: absolute;
   top: 247%;
   left: 50%;
@@ -33,12 +34,13 @@
     position: static;
     width: unset;
     max-width: 436px;
+    padding-top: 0;
     transform: none;
     z-index: 0;
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 475px;
+    max-width: 476px;
     background-color: inherit;
   }
 }

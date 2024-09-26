@@ -1,6 +1,6 @@
 .catalog-input {
   @include text-format ($second-font, 20px, 150%, $primary-text-color);
-  padding: 12px;
+  padding: 14px;
   border: 1px solid #e7e7e7;
   text-transform: uppercase;
 
@@ -19,5 +19,9 @@
     border-color: #ff8282;
     outline: 1px solid #ff8282;
     outline-offset: -2px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 12px;
   }
 }
