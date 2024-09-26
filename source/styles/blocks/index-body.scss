@@ -1,9 +1,6 @@
 .index-body {
   @include text-format ($primary-font, 14px, 129%, $primary-text-color);
   position: relative;
-  display: flex;
-  flex-direction: column;
-  min-height: 100%;
   background-color: $primary-bg-color;
 
   @media (min-width: $tablet-width) {
@@ -17,6 +14,7 @@
 }
 
 .index-body__main-header {
+  position: relative;
   width: 320px;
   margin: 0 auto;
 
@@ -33,6 +31,10 @@
     transform: translate(-50%, -50%);
     z-index: 2;
   }
+}
+
+.index-body__main {
+  flex-grow: 1;
 }
 
 .index-body__main-footer-wrapper {

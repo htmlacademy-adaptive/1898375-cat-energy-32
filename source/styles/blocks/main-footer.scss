@@ -5,15 +5,14 @@
 .main-footer__wrapper {
   width: 320px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 40px 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 40px;
 
   @media (min-width: $tablet-width) {
     width: 768px;
-    padding: 55px 30px;
+    padding: 59px 30px;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
@@ -22,7 +21,7 @@
 
   @media (min-width: $desktop-width) {
     width: 1440px;
-    padding: 73.5px 110px;
+    padding: 70.5px 110px;
     flex-direction: row;
     align-items: center;
   }
@@ -32,26 +31,10 @@
   width: 128px;
   height: 24px;
   margin: 0 auto;
+  margin-bottom: 19px;
 
   @media (min-width: $tablet-width) {
     margin: 0;
-  }
-}
-
-.main-footer__logo--line-style {
-  position: relative;
-
-  &::after {
-    @include common-pseudo (280px, 1px);
-    position: absolute;
-    top: 174%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #d9d9d9;
-
-    @media (min-width: $tablet-width) {
-      display: none;
-    }
   }
 }
 
@@ -64,29 +47,36 @@
   }
 }
 
-.main-footer__list {
-  position: relative;
-  max-width: 132px;
-  margin: 0;
-  list-style: none;
+.main-footer__list-wrapper {
+  width: 280px;
+  margin-bottom: 20px;
 
-  @media (min-width: $tablet-width) {
-    margin-left: 35px;
-  }
-}
-
-.main-footer__list--line-style {
+  &::before,
   &::after {
     @include common-pseudo (280px, 1px);
-    position: absolute;
-    top: 187%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     background-color: #d9d9d9;
 
     @media (min-width: $tablet-width) {
       display: none;
     }
+  }
+
+  @media (min-width: $tablet-width) {
+    width: unset;
+    margin-bottom: 0;
+  }
+}
+
+.main-footer__list {
+  width: 132px;
+  margin: 0 auto;
+  margin-top: 19px;
+  margin-bottom: 20px;
+  list-style: none;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    margin-left: 35px;
   }
 }
 

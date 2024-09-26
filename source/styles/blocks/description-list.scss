@@ -9,9 +9,10 @@
   }
 
   @media (min-width: $desktop-width) {
-    display: flex;
-    flex-wrap: wrap;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: unset;
     gap: 0;
+    row-gap: 10px;
   }
 }
 
@@ -19,11 +20,13 @@
   position: relative;
   display: flex;
   align-items: center;
+  column-gap: 20px;
 
   @media (min-width: $tablet-width) {
     width: 250px;
     flex-direction: column;
     align-items: start;
+    column-gap: 0;
   }
 }
 
@@ -60,8 +63,8 @@
 
   @media (min-width: $desktop-width) {
     width: 230px;
-    padding-bottom: 57px;
     margin-right: 94px;
+    padding-bottom: 57px;
   }
 }
 
@@ -98,8 +101,8 @@
 
   @media (min-width: $desktop-width) {
     width: 246px;
-    padding-bottom: 57px;
     margin-right: 80px;
+    padding-bottom: 57px;
   }
 }
 
@@ -136,8 +139,8 @@
   @media (min-width: $desktop-width) {
     top: -1px;
     width: 248px;
-    padding-bottom: 57px;
     margin-right: 76px;
+    padding-bottom: 57px;
   }
 }
 
@@ -179,8 +182,22 @@
   }
 }
 
-.description-list__item--clock-style br:nth-child(odd) {
-  @media (min-width: $tablet-width) {
+.description-list__item--clock-style .description-section__text {
+  width: 200px;
+
+  & br:nth-child(2) {
     display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: unset;
+
+    & br:nth-child(1) {
+      display: none;
+    }
+
+    & br:nth-child(2) {
+      display: inline-block;
+    }
   }
 }

@@ -5,6 +5,8 @@
   <meta charset="UTF-8">
   <title>Каталог магазина Кэт энерджи</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="preload" href="fonts/lato/Lato-Regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswald/oswaldregular.woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="styles/styles.css">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
@@ -17,13 +19,13 @@
 
   <header class="catalog-body__main-header main-header">
     <nav class="main-header__navigation main-navigation main-navigation--closed main-navigation--nojs ">
-      <a class="main-header__logo logo-link" href="#">
+      <a class="main-header__logo logo-link" href="index.html">
         <picture>
           <source media="(min-width: 1440px)" srcset="images/logo-tablet.svg" width="70" height="59" type="image/svg+xml">
           <source media="(min-width: 768px)" srcset="images/logo-tablet.svg" width="60" height="50" type="image/svg+xml">
           <img class="main-header__logo-image" src="images/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy.">
         </picture>
-        <img class="main-header__logo-text" src="images/logo-text.svg" width="101" height="18" alt="Название магазина.">
+        <img class="main-header__logo-text main-header__catalog-logo-text" src="images/logo-text.svg" width="101" height="18" alt="Название магазина.">
       </a>
       <button class="main-navigation__menu-button" type="button" aria-label="Открыть меню"></button>
       <div class="main-navigation__inner-wrapper">
@@ -189,7 +191,7 @@
               <picture>
                 <source media="(min-width: 1440px)" width="172" height="196" type="image/webp" srcset="images/buckwheat-1000-desktop@1x.webp 1x, images/buckwheat-1000-desktop@2x.png 2x">
                 <source media="(min-width: 768px)" width="168" height="206" type="image/webp" srcset="images/buckwheat-1000-tablet@1x.webp 1x, images/buckwheat-1000-tablet@2x.webp 2x">
-                <source width="168" height="206" type="image/webp" srcset="images/buckwheat-1000-tablet@1x.webp 1x, images/buckwheat-1000-tablet@2x.webp 2x">
+                <source width="84" height="100" type="image/webp" srcset="images/buckwheat-1000-tablet@1x.webp 1x, images/buckwheat-1000-tablet@2x.webp 2x">
                 <source media="(min-width: 1440px)" width="172" height="196" type="image/png" srcset="images/buckwheat-1000-desktop@1x.png 1x, images/buckwheat-1000-desktop@2x.png 2x">
                 <source media="(min-width: 768px)" width="168" height="206" type="image/png" srcset="images/buckwheat-1000-tablet@1x.png 1x, images/buckwheat-1000-tablet@2x.png 2x">
                 <img class="catalog-list__item-image" width="84" height="100" src="images/buckwheat-1000-mobile@1x.png" srcset="images/buckwheat-1000-tablet@2x.png 2x" alt="Пластиковый стакан с едой">
@@ -330,23 +332,25 @@
   <footer class="catalog-body__main-footer main-footer">
     <div class="catalog-body__main-footer-wrapper main-footer__wrapper">
       <h2 class="visually-hidden">Контакты и полезная информация.</h2>
-      <a class="main-footer__logo main-footer__logo--line-style logo-link-text" href="#">
+      <a class="main-footer__logo logo-link-text" href="index.html">
         <img class="main-footer__logo-text " src="images/logo-text.svg" width="101" height="18" alt="Название магазина.">
       </a>
-      <ul class="main-footer__list main-footer__list--line-style footer-list">
-        <li class="main-footer__list-item">
-          <a class="footer-list__link footer-list__link--vkontakte-style" href="#" aria-label="Переход на страницу магазина во Вконтакте.">
-          </a>
-        </li>
-        <li class="main-footer__list-item">
-          <a class="footer-list__link footer-list__link--youtube-style" href="#" aria-label="Переход на канал магазина в Ютуб.">
-          </a>
-        </li>
-        <li class="main-footer__list-item">
-          <a class="footer-list__link footer-list__link--telegram-style" href="#" aria-label="Переход в группу магазина в Телеграм.">
-          </a>
-        </li>
-      </ul>
+      <div class="main-footer__list-wrapper">
+        <ul class="main-footer__list footer-list">
+          <li class="footer-list__list-item">
+            <a class="footer-list__link footer-list__link--vkontakte-style" href="#" aria-label="Переход на страницу магазина во Вконтакте.">
+            </a>
+          </li>
+          <li class="footer-list__list-item">
+            <a class="footer-list__link footer-list__link--youtube-style" href="#" aria-label="Переход на канал магазина в Ютуб.">
+            </a>
+          </li>
+          <li class="footer-list__list-item">
+            <a class="footer-list__link footer-list__link--telegram-style" href="#" aria-label="Переход в группу магазина в Телеграм.">
+            </a>
+          </li>
+        </ul>
+      </div>
       <a class="main-footer__developer-link developer-link" href="https://htmlacademy.ru/intensive/adaptive">
         <span class="developer-link__text">HTML Academy</span>
         <span class="visually-hidden">Переход на сайт разработчика.</span>

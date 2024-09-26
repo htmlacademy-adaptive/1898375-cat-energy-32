@@ -1,8 +1,5 @@
 .catalog-body {
   @include text-format ($primary-font, 12px, 133%, $primary-text-color);
-  display: flex;
-  flex-direction: column;
-  min-height: 100%;
   background-color: $primary-bg-color;
 
   @media (min-width: $tablet-width) {
@@ -44,11 +41,15 @@
   @media (min-width: $desktop-width) {
     position: absolute;
     width: 1220px;
-    top: 2.9%;
+    top: 3%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
   }
+}
+
+.catalog-body__main {
+  flex-grow: 1;
 }
 
 .catalog-body__main-footer-wrapper {

@@ -1,6 +1,6 @@
 .main-header-link {
   @include text-format ($second-font, 20px, 100%, $second-text-color);
-  padding: 22px 0;
+  padding: 22px 0 24px;
   text-transform: uppercase;
 
   &:hover {
@@ -28,19 +28,21 @@
 }
 
 .main-header-link--change-hover {
-  &:hover {
-    color: #bfdbaf;
-  }
+  @media (min-width: $desktop-width) {
+    &:hover {
+      color: #bfdbaf;
+    }
 
-  &:active {
-    color: #93c977;
+    &:active {
+      color: #93c977;
+    }
   }
 }
 
 .main-header-link--active {
   @media (min-width: $tablet-width) {
     text-decoration-line: underline;
-    text-underline-offset: 7px;
+    text-underline-offset: 11px;
     text-decoration-thickness: 2px;
     text-decoration-color: $third-bg-color;
   }
