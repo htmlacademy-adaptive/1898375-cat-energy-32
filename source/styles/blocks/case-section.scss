@@ -65,6 +65,14 @@
   }
 }
 
+.case-section__text br {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: inline-block;
+  }
+}
+
 .case-section__parameter {
   display: flex;
   justify-content: center;
